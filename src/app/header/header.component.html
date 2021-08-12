@@ -11,4 +11,9 @@
     </ng-template>
 </h3>
 
-<h3>Carrier Rocket: {{ rocketName }}</h3>
+<h3>Carrier Rocket: 
+    <input #carrierRocket (keyup.enter)="updateRocket(carrierRocket.value)"
+    value = "{{ rocketName }}"/>
+    <button (click) = "updateRocket(carrierRcoket.value)"></button>
+
+</h3>
